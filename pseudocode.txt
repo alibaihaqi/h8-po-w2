@@ -1,0 +1,64 @@
+/* 1. Newton Second Law */
+
+SET massa to 600
+    //satuan massa dalam kg
+SET acceleration to 2
+    //satuan acceleration dalam m/(s^2)
+CALCULATE Force as massa times acceleration
+    //satuan Force dalam Newton (N)
+
+
+/* 2. Tahun Kabisat */
+
+SET "tahun" to 0
+    
+DISPLAY "tahun"
+WHILE "tahun" <= 2018
+    IF ("tahun" module 4 EQUAL 0)
+        IF ("tahun" module 100 EQUAL 0)
+            IF ("tahun" module 400 EQUAL 0)
+                DISPLAY ("Kabisat")
+            ELSE
+                DISPLAY ("Tidak Kabisat")
+            ENDIF
+            
+        ELSE
+            DISPLAY ("Kabisat")
+        ENDIF        
+            
+        ELSE
+        DISPLAY ("Tidak Kabisat")
+    ENDIF
+
+    "tahun" = "tahun" + 1
+ENDWHILE
+
+/* 3. Laundry Day */
+
+STORE "pakaian" to 20
+GET "mesin cuci"
+
+REPEAT
+    "pakaian" = "pakaian" - 1
+    
+UNTIL "pakaian" == 0
+
+START "mesin cuci"
+
+/* 4. Periksa Kuku */
+
+//Asumsi telah tersedia kelas Siswa yang memiliki properti kuku
+Siswa siswa[40]
+//
+FOR x = 0 to 39
+    str r = Random between "panjang" OR "pendek"
+    siswa[x].kuku = r
+
+ENDFOR
+
+FOR x = 0 to 39
+    IF  (siswa[x].kuku = "panjang")
+        DISPLAY ("HUKUM!")
+    ELSE
+        DISPLAY ("PUJI!")
+ENDFOR
