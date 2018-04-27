@@ -19,19 +19,22 @@ while (number >= 1) {
 
 /* 2. Melakukan Looping Menggunakan For */
 
+var number2 = 1;
+
 console.log('LOOPING PERTAMA');
 
-for (var number2 = 1; number2 <= 20; number2 = number2 + 1) {
+for (number2; number2 <= 20; number2 = number2 + 1) {
     console.log(number2 + ' - I love Coding');
 }
 
 console.log('LOOPING KEDUA');
 
-for (var number2 = 1; number2 <= 20; number2 = number2 + 1) {
-    console.log(number2 + " - I will become fullstack developer");
-    number2 = number2 + deret;
-}
+number2 = 20;
 
+for (number2; number2 >= 1 ; number2 = number2 - 1) {
+    console.log(number2 + " - I will become fullstack developer");
+ 
+}
 /* 3. Angka Ganjil dan Genap */
 
 //contoh - ganjil genap
@@ -43,5 +46,41 @@ for (counter ;counter <= 100; counter++) {
     }
     else {
         console.log('GENAP')
+    }
+}
+
+//contoh - untuk pertambahan counter 2
+var counter = 1;
+
+for (counter ;counter <= 100; counter = counter + 2) {
+    if (counter % 3 === 0) {
+        console.log(counter + ' KELIPATAN 3')
+    }
+    else {
+        console.log('')
+    }
+}
+
+//contoh - untuk pertambahan counter 5
+var counter = 1;
+
+for (counter ;counter <= 100; counter = counter + 5) {
+    if (counter % 6 === 0) {
+        console.log(counter + ' KELIPATAN 6')
+    }
+    else {
+        console.log('')
+    }
+}
+
+//contoh - untuk pertambahan counter 10
+var counter = 1;
+
+for (counter ;counter <= 100; counter = counter + 9) {
+    if (counter % 10 === 0) {
+        console.log(counter + ' KELIPATAN 10')
+    }
+    else {
+        console.log('')
     }
 }
