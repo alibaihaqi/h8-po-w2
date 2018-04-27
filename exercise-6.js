@@ -19,19 +19,16 @@ while (number >= 1) {
 
 /* 2. Melakukan Looping Menggunakan For */
 
-var number2 = 1;
 
 console.log('LOOPING PERTAMA');
 
-for (number2; number2 <= 20; number2 = number2 + 1) {
+for (var number2 = 1; number2 <= 20; number2 = number2 + 1) {
     console.log(number2 + ' - I love Coding');
 }
 
 console.log('LOOPING KEDUA');
 
-number2 = 20;
-
-for (number2; number2 >= 1 ; number2 = number2 - 1) {
+for (number2 = 20; number2 >= 1 ; number2 = number2 - 1) {
     console.log(number2 + " - I will become fullstack developer");
  
 }
