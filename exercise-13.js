@@ -1,5 +1,12 @@
 function xo(str) {
-    var pisahkata = str.split('');
+    var nilaix = (str.match(/x/g) || []).length;
+    var nilaio = (str.match(/o/g) || []).length;
+    if (nilaix === nilaio) {
+        return true
+    }
+    else {
+        return false
+    }
     // you can only write your code here!
   }
   
