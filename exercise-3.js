@@ -18,7 +18,8 @@
 var nama = '';
 var peran = '';
 
-if (nama !== '') {
+if (nama !== '' || nama === undefined) {
+    console.log("Selamat datang di Dunia Proxytia, " + nama);
     if (peran === 'Ksatria') {
         console.log('Halo ' + peran + ' ' + nama + ', kamu dapat menyerang dengan senjatamu!');
     } else if (peran === 'Tabib') {
